@@ -5,13 +5,19 @@
 An implementation of Gucumber with Selenium for GO. 
 This repo are implementation of selenium web driver with Gucumber through simple example 
 
-## Installing of Gucumber
+## Installing of clean Gucumber
 
 ```sh
 $ go get github.com/gucumber/gucumber/cmd/gucumber
 ```
 For more details on Gucumber install visit `https://github.com/gucumber/gucumber`
 
+## Installing of Gucumber with selenium
+```sh
+$ go get github.com/edibImamovic/Gucumber-with-selenium-example
+```
+or to celan Gucumber add example `internal/features/googleSearch`
+ 
  Usage
 
 1. Create cucumber features in `/features` folder eg googleSearch
