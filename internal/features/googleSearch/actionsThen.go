@@ -13,11 +13,15 @@ func iWaitFor() error {
 }
 
 func compareTitle(expectedTitle string) error {
-	var title, _ = driver.Title()
-	if expectedTitle != title {
-		panic("test failed")
-		return nil
+	title, err := driver.Title()
+	if err != nil {
+		return err
+	}
+	if expectedTitle !=title{
+		panic(title + " and " + expectedTitle + "are not equal")
+		return driver.Close()
 	}
 
-	return driver.Quit()
+	return driver.Close()
 }
+

@@ -18,7 +18,7 @@ func init() {
 	})
 
 	Then(`^I should see "(.+?)" in link text$`, func(expectedTitle string) {
-		//iWaitFor()
+		iWaitFor()
 		compareTitle(expectedTitle)
 	})
 
